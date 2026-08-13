@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <h1>404 — Link Not Found</h1>
+        <p>
+            The short link <code>/{{ short_code }}</code> does not exist.
+            It may have been mistyped or never created.
+        </p>
+        <p><a href="/">Shorten another URL</a></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple URL Shortener</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <h1>Shorten a URL</h1>
+        <p class="subtitle">Paste a long link and get a short, shareable one.</p>
+
+        <form id="shorten-form">
+            <input
+                type="url"
+                id="long-url"
+                name="long_url"
+                placeholder="https://example.com/some/very/long/path"
+                required
+            >
+            <button type="submit">Shorten</button>
+        </form>
+
+        <div id="error" class="error hidden"></div>
+
+        <div id="result" class="result hidden">
+            <p>Your short link:</p>
+            <a id="short-link" href="#" target="_blank" rel="noopener"></a>
+            <button type="button" id="copy-btn">Copy</button>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#shorten-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#long-url {
+    flex: 1;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#long-url:focus {
+    outline: 2px solid #3a86ff;
+    border-color: transparent;
+}
+
+button {
+    padding: 0.7rem 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: #3a86ff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2f6fd6;
+}
+
+.error {
+    margin-top: 1rem;
+    color: #d90429;
+    font-size: 0.9rem;
+}
+
+.result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f6f8fb;
+    border-radius: 8px;
+}
+
+.result p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+}
+
+#short-link {
+    display: block;
+    word-break: break-all;
+    color: #3a86ff;
+    margin-bottom: 0.8rem;
+}
+
+.hidden {
+    display: none;
+}
